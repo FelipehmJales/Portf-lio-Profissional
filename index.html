@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Profissional - Felipe H. M. Jales</title>
-    <link rel="stylesheet" href="Protótipo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -40,9 +40,9 @@
         <div class="container">
             <h2>Projetos</h2>
             <div class="timeline">
-                <div class="projeto-card" style="text-align: center; padding: 40px 20px; border-left: none;">
-                    <p style="font-size: 1.1rem; color: #555;">
-                        🚀 <strong>Em Desenvolvimento</strong><br><br>
+                <div class="projeto-card" style="text-align: center;">
+                    <p style="font-size: 1.1rem;">
+                        🚀 <strong style="color: var(--accent-color);">Em Desenvolvimento</strong><br><br>
                         Atualmente, estou focado na minha aprendizagem e desenvolvimento técnico em Python, SQL e Inteligência Artificial. 
                         Ainda não possuo projetos finalizados para exibição, mas em breve atualizarei esta secção com os meus primeiros modelos e análises de dados.
                     </p>
@@ -54,9 +54,9 @@
     <section id="experiencias" class="container">
         <h2>Experiências</h2>
         <div class="experiencia-lista">
-            <div class="exp-item" style="text-align: center; border-bottom: none; padding: 20px;">
-                <p style="font-size: 1.1rem; color: #555;">
-                    🌱 <strong>Em Busca da Primeira Oportunidade</strong><br><br>
+            <div class="exp-item" style="text-align: center;">
+                <p style="font-size: 1.1rem;">
+                    🌱 <strong style="color: var(--accent-color);">Em Busca da Primeira Oportunidade</strong><br><br>
                     No momento, encontro-me totalmente dedicado à minha formação académica e ao aprimoramento das minhas competências em tecnologia e dados. 
                     Estou à procura da minha primeira oportunidade de estágio ou de uma vaga júnior na área de Inteligência Artificial e Big Data para aplicar os meus conhecimentos num ambiente real.
                 </p>
@@ -90,5 +90,41 @@
         <p>&copy; 2026 Portfólio Profissional. Desenvolvido por Felipe H. M. Jales.</p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("8mhlFMfSFs8TAWc7q");
+        })();
+
+        window.onload = function() {
+            document.querySelector('.form-contato').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const btn = this.querySelector('button');
+                const btnTextoOriginal = btn.innerText;
+                btn.innerText = 'Enviando...';
+
+                const nome = this.nome.value;
+                const email = this.email.value;
+                const mensagem = this.mensagem.value;
+
+                if(nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+                    alert('Por favor, preencha todos os campos!');
+                    btn.innerText = btnTextoOriginal;
+                    return;
+                }
+
+                emailjs.sendForm('service_4bsgnqi', 'template_ftbjmru', this)
+                    .then(function() {
+                        alert('Mensagem enviada com sucesso! Entrarei em contacto em breve.');
+                        document.querySelector('.form-contato').reset();
+                        btn.innerText = btnTextoOriginal;
+                    }, function(error) {
+                        alert('Falha ao enviar a mensagem. Erro: ' + JSON.stringify(error));
+                        btn.innerText = btnTextoOriginal;
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
