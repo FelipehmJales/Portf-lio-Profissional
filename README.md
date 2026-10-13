@@ -3,7 +3,7 @@
 **Aluno:** Felipe Henrique Moreira Jales  
 **Curso:** Ciência da Computação (PUC Minas)  
 **Disciplina:** Desenvolvimento de Interfaces Web (DIW)  
-**Turno:** Manhã/Tarde  
+**Turno:** Manhã 
 **Professor:** João Paulo Carneiro Aramuni
 
 ## 📖 Descrição do Projeto
