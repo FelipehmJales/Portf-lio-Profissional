@@ -1,30 +1,41 @@
-# Portfólio Profissional - Felipe H. M. Jales
+# Portfólio Profissional
+
+**Aluno:** Felipe Henrique Moreira Jales  
+**Curso:** Ciência da Computação (PUC Minas)  
+**Disciplina:** Desenvolvimento de Interfaces Web (DIW)  
+**Turno:** Manhã/Tarde  
+**Professor:** João Paulo Carneiro Aramuni
 
 ## 📖 Descrição do Projeto
-Este projeto consiste no desenvolvimento de um website de portfólio profissional em formato *One-Page*. O objetivo principal é apresentar a minha trajetória, o meu foco de desenvolvimento na área de Dados e Inteligência Artificial (IA), bem como as minhas habilidades, projetos e formas de contacto. O projeto foi desenvolvido como parte dos requisitos do Laboratório 01.
+Este projeto consiste no desenvolvimento de um website de portfólio profissional em formato *One-Page*. O objetivo principal é apresentar a trajetória, o foco de desenvolvimento na área de Dados e Inteligência Artificial (IA), bem como habilidades, projetos e formas de contacto. O projeto foi desenvolvido como parte dos requisitos do Laboratório 01. O sistema possui um design responsivo, com o tema visual "Dark Mode", e um formulário de contacto funcional integrado com o serviço EmailJS.
+
+## 🔗 Link de Hospedagem
+O site foi publicado utilizando o GitHub Pages e pode ser acedido através do link abaixo:
+> **[https://felipehmjales.github.io/Portf-lio-Profissional/](https://felipehmjales.github.io/Portf-lio-Profissional/)**
 
 ## 🎨 Protótipos (Wireframes)
-O planeamento visual e as interações de navegação foram desenvolvidos no Figma.
+O planeamento visual e as interações de navegação foram desenvolvidos no Figma durante a Sprint 01.
 
 * **Link para o protótipo interativo:** [Aceder ao Figma](https://www.figma.com/proto/BKvQghCuRgrpRtH6aGVEkX/Trabalho-TI--c%C3%B3pia-?node-id=2002-6&p=f&t=WvUbWInn5olLuksR-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2002%3A6)
 
-![Wireframe do Portfólio](./DIW.png) 
+*(Abaixo está a captura de ecrã da estrutura de navegação do protótipo)*
+![Wireframe do Portfólio](./DIW.png)
 
-## 💻 Tecnologias Previstas
-Para a construção da estrutura inicial e prototipagem, foram definidas as seguintes tecnologias:
-* **Figma:** Prototipagem e Wireframes (média fidelidade).
+## 🛠️ Tecnologias Utilizadas
+Abaixo estão listadas as tecnologias, frameworks e bibliotecas utilizadas no desenvolvimento deste projeto:
+
 * **HTML5:** Estruturação semântica do conteúdo e secções da página.
-* **CSS3:** Estilização, layout e responsividade (variáveis CSS, Flexbox).
+* **CSS3:** Estilização, layout responsivo (Flexbox) e implementação de variáveis para o tema escuro.
+* **JavaScript (Vanilla):** Lógica para validação de campos do formulário e manipulação do DOM.
+* **EmailJS:** Serviço de API utilizado para o envio real de e-mails diretamente do front-end, sem a necessidade de um servidor back-end.
+* **Figma:** Utilizado para a criação dos protótipos de interface e wireframes na fase de planeamento.
 * **Git e GitHub:** Versionamento de código e alojamento do repositório.
-* **Hospedagem na Nuvem (Prevista):** Vercel ou GitHub Pages para o *deploy* final.
+* **GitHub Pages:** Plataforma escolhida para o *deploy* (hospedagem) gratuito do site estático na nuvem.
 
-## 🗂️ Estrutura Inicial do Site
-O projeto adota uma arquitetura simples e direta, ideal para sites estáticos, utilizando navegação por âncoras dentro da mesma página:
-
-* `index.html`: Ficheiro principal que contém toda a estrutura do site dividida pelas seguintes secções:
-  * **Cabeçalho (Header):** Menu de navegação fixo (*sticky*).
-  * **Sobre Mim:** Apresentação pessoal e objetivos profissionais (em Português e Inglês).
-  * **Projetos:** Linha do tempo reservada para futuros projetos na área de Dados.
-  * **Experiências:** Espaço dedicado à apresentação do meu percurso académico e procura pela primeira oportunidade no mercado de trabalho.
-  * **Contato:** Links para redes sociais (LinkedIn, GitHub, WhatsApp) e um formulário para envio de mensagens.
-* `style.css`: Ficheiro responsável por toda a formatação visual e adaptação para dispositivos móveis (responsividade).
+## 📁 Estrutura de Diretórios do Projeto
+```text
+/
+├── index.html       # Arquivo principal contendo a estrutura, o conteúdo da página e os scripts do EmailJS
+├── style.css        # Arquivo de estilos contendo o design (Dark Mode) e responsividade
+├── DIW.png          # Imagem contendo o wireframe/protótipo inicial do projeto
+└── README.md        # Documentação completa do projeto
