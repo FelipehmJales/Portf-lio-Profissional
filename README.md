@@ -8,9 +8,7 @@ O planeamento visual e as interações de navegação foram desenvolvidos no Fig
 
 * **Link para o protótipo interativo:** [Aceder ao Figma](https://www.figma.com/proto/BKvQghCuRgrpRtH6aGVEkX/Trabalho-TI--c%C3%B3pia-?node-id=2002-6&p=f&t=WvUbWInn5olLuksR-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2002%3A6)
 
-*(Abaixo está a captura de ecrã da estrutura de navegação do protótipo)*
-![Wireframe do Portfólio](./prototipo.png) 
-> **Aviso:** Certifique-se de adicionar o ficheiro da imagem na sua pasta do GitHub com o nome "prototipo.png".
+![Wireframe do Portfólio](./DIW.png) 
 
 ## 💻 Tecnologias Previstas
 Para a construção da estrutura inicial e prototipagem, foram definidas as seguintes tecnologias:
