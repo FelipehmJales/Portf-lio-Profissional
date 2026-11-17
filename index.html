@@ -3,133 +3,492 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Profissional - Felipe H. M. Jales</title>
+    <title>TERMINAL DE INTELIGÊNCIA // FELIPE H. M. JALES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="locked">
 
-    <header>
-        <div class="container">
-            <h1>Felipe Jales.</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#experiencias">Experiências</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="sobre" class="container">
-        <h2>Sobre Mim</h2>
-        
-        <div class="perfil-container">
-            <img src="284975949.jpg" alt="Foto de Perfil de Felipe H. M. Jales" class="foto-perfil">
+    <div id="login-screen" class="login-screen">
+        <div class="login-top-bar">
+            <span>TERMINAL_OS // WORKSTATION v4.5</span>
+            <span id="login-date">--/--/----</span>
         </div>
 
-        <div class="sobre-content">
-            <div class="idioma pt">
-                <h3>Português</h3>
-                <p>Olá, sou o Felipe Henrique Moreira Jales. O meu objetivo profissional é atuar na área de Dados e Inteligência Artificial numa empresa de tecnologia, com a ambição futura de integrar uma BIG TECH. Após a conclusão do curso, planeio também prosseguir os meus estudos académicos através de um mestrado ou doutoramento. Sou um profissional motivado e focado no autoconhecimento, destacando-me pela resiliência, flexibilidade e agilidade. Valorizo o pensamento criativo, a literacia tecnológica e a empatia, mantendo um foco constante no aprendizado contínuo. Atualmente, dedico-me ao aprimoramento das minhas competências em Python, SQL, ferramentas de Big Data e língua inglesa.</p>
-            </div>
-            <div class="idioma en">
-                <h3>English</h3>
-                <p>Hello, my name is Felipe Henrique Moreira Jales. My professional goal is to work in the data and artificial intelligence field at a technology company, with the future ambition of joining a big tech company. After completing my degree, I plan to pursue academic studies through a Master's or Doctoral programme. I am a motivated professional with a focus on self-knowledge and I stand out for my resilience, flexibility and agility. I value creative thinking, technological literacy and empathy, and I am committed to continuous learning. Currently, I am working to improve my Python, SQL, Big Data tools and English skills.</p>
-            </div>
-        </div>
-    </section>
+        <div class="login-center">
+            <div id="login-big-clock" class="login-clock">00:00</div>
+            
+            <div class="login-box">
+                <div class="card-corner top-left"></div>
+                <div class="card-corner top-right"></div>
+                <div class="card-corner bottom-left"></div>
+                <div class="card-corner bottom-right"></div>
 
-    <section id="projetos" class="bg-light">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="timeline">
-                <div class="projeto-card" style="text-align: center;">
-                    <p style="font-size: 1.1rem;">
-                        🚀 <strong style="color: var(--accent-color);">Em Desenvolvimento</strong><br><br>
-                        Atualmente, estou focado na minha aprendizagem e desenvolvimento técnico em Python, SQL e Inteligência Artificial. 
-                        Ainda não possuo projetos finalizados para exibição, mas em breve atualizarei esta secção com os meus primeiros modelos e análises de dados.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experiencias" class="container">
-        <h2>Experiências</h2>
-        <div class="experiencia-lista">
-            <div class="exp-item" style="text-align: center;">
-                <p style="font-size: 1.1rem;">
-                    🌱 <strong style="color: var(--accent-color);">Em Busca da Primeira Oportunidade</strong><br><br>
-                    No momento, encontro-me totalmente dedicado à minha formação académica e ao aprimoramento das minhas competências em tecnologia e dados. 
-                    Estou à procura da minha primeira oportunidade de estágio ou de uma vaga júnior na área de Inteligência Artificial e Big Data para aplicar os meus conhecimentos num ambiente real.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="bg-light">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contato-wrapper">
-                <div class="icones-sociais">
-
-                    <a href="https://wa.me/5531983529504" target="_blank">📱 (31) 98352-9504</a>
-                    <a href="mailto:felipehjales@gmail.com">📧 felipehjales@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/felipe-jales-a91665418/" target="_blank">🔗 LinkedIn</a>
-                    <a href="https://github.com/FelipehmJales" target="_blank">🐙 GitHub</a>
+                <div class="login-avatar-wrapper">
+                    <img src="284975949.jpg" alt="Felipe H. M. Jales" class="login-avatar">
+                    <div class="avatar-ring"></div>
                 </div>
 
-                <form action="#" method="POST" class="form-contato">
-                    <input type="text" name="nome" placeholder="O seu Nome" required>
-                    <input type="email" name="email" placeholder="O seu E-mail" required>
-                    <textarea name="mensagem" rows="5" placeholder="A sua Mensagem" required></textarea>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
+                <h2 class="login-user">FELIPE H. M. JALES</h2>
+                <p class="login-role">ANALISTA DE DADOS & IA // CLEARANCE NÍVEL 4</p>
+
+                <div class="login-input-area">
+                    <div class="password-fake">
+                        <span class="lock-icon">🔒</span>
+                        <input type="password" id="login-pass" value="" placeholder="PIN / CHAVE DE ACESSO" readonly>
+                    </div>
+                    <button type="button" id="btn-login" class="btn-unlock">[ AUTENTICAR / ENTRAR ]</button>
+                </div>
+
+                <div id="login-status" class="login-status">AGUARDANDO CREDENCIAIS DO OPERADOR...</div>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Portfólio Profissional. Desenvolvido por Felipe H. M. Jales.</p>
-    </footer>
+        <div class="login-bottom-bar">
+            <span>REDE: CRIPTOGRAFADA (AES-256)</span>
+            <span>PRESSIONE [ENTER] OU CLIQUE EM ENTRAR PARA ACESSAR O SISTEMA</span>
+        </div>
+    </div>
+
+    <div class="scanlines"></div>
+
+    <div class="os-shell">
+        <div class="top-telemetry">
+            <div class="telemetry-flex">
+                <span><span class="status-dot"></span> SYS.STATUS: ONLINE // CRIPTOGRAFIA: AES-256</span>
+                <span class="hide-mobile">DIVISÃO: DATA & ARTIFICIAL INTELLIGENCE</span>
+                <span id="utc-clock">BRT: CARREGANDO...</span>
+            </div>
+        </div>
+
+        <header class="os-header">
+            <div class="brand">
+                <span class="brand-tag">[ID: FHMJ-01]</span>
+                <h1>FELIPE_JALES<span class="cursor">_</span></h1>
+            </div>
+            <div class="header-actions">
+                <span class="active-module-indicator">MÓDULO ATIVO: <strong id="current-module-name">SOBRE</strong></span>
+                <button type="button" id="btn-lock-session" class="lock-session-btn" title="Bloquear Estação de Trabalho">🔒 BLOQUEAR</button>
+            </div>
+        </header>
+
+        <div class="os-workspace">
+            <aside class="os-sidebar">
+                <div class="sidebar-title">// DIRETÓRIOS DO SISTEMA</div>
+                <nav class="os-nav">
+                    <button type="button" class="nav-tab active" data-target="sobre">
+                        <span class="tab-code">01</span>
+                        <span class="tab-text">DOSSIÊ (SOBRE)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="projetos">
+                        <span class="tab-code">02</span>
+                        <span class="tab-text">OPERAÇÕES (PROJETOS)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="experiencias">
+                        <span class="tab-code">03</span>
+                        <span class="tab-text">HISTÓRICO (XP)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="certificacoes">
+                        <span class="tab-code">04</span>
+                        <span class="tab-text">CREDENCIAIS (CERTS)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="curriculo">
+                        <span class="tab-code">05</span>
+                        <span class="tab-text">ARQUIVO CV (RESUME)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="contato">
+                        <span class="tab-code">06</span>
+                        <span class="tab-text">COMUNICAÇÃO (CONTATO)</span>
+                    </button>
+                    <button type="button" class="nav-tab" data-target="ajuda">
+                        <span class="tab-code">07</span>
+                        <span class="tab-text">TERMINAL (HELP)</span>
+                    </button>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="sys-metric">
+                        <span>MEMÓRIA TÁTICA</span>
+                        <span class="metric-val">OPTIMIZED</span>
+                    </div>
+                    <div class="metric-bar"><div class="metric-fill"></div></div>
+                </div>
+            </aside>
+
+            <main class="os-viewport" id="os-viewport">
+
+                <section id="sobre" class="os-panel active-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-01 : CLASSIFICADO [CMD: sobre | about]</span>
+                        <h2>DOSSIÊ DO ANALISTA</h2>
+                    </div>
+
+                    <div class="dossier-grid">
+                        <div class="biometric-card">
+                            <div class="card-corner top-left"></div>
+                            <div class="card-corner top-right"></div>
+                            <div class="card-corner bottom-left"></div>
+                            <div class="card-corner bottom-right"></div>
+
+                            <div class="scanner-wrapper">
+                                <img src="284975949.jpg" alt="Foto de Perfil de Felipe H. M. Jales" class="foto-perfil">
+                                <div class="laser-scan"></div>
+                                <div class="hud-overlay">
+                                    <span>REC // BIOMETRIA VERIFICADA</span>
+                                </div>
+                            </div>
+
+                            <div class="agent-meta">
+                                <div class="meta-row">
+                                    <span class="meta-label">NOME:</span>
+                                    <span class="meta-val">FELIPE H. M. JALES</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">ESPECIALIDADE:</span>
+                                    <span class="meta-val">DADOS & IA</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">CLEARANCE:</span>
+                                    <span class="meta-val highlight-amber">NÍVEL 4 (RESTRITO)</span>
+                                </div>
+                                <div class="meta-row">
+                                    <span class="meta-label">ARSENAL ATIVO:</span>
+                                    <span class="meta-val">PYTHON, SQL, BIG DATA, EN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="intel-report">
+                            <div class="terminal-bar">
+                                <div class="terminal-title">ARQUIVO: PERFIL_OPERACIONAL.DAT</div>
+                                <div class="lang-switch">
+                                    <button type="button" class="lang-btn active" data-lang="pt">[PT-BR]</button>
+                                    <button type="button" class="lang-btn" data-lang="en">[EN-US]</button>
+                                </div>
+                            </div>
+
+                            <div class="report-body">
+                                <div class="idioma pt active-lang">
+                                    <div class="stamp">CONFIDENCIAL // ACESSO AUTORIZADO</div>
+                                    <h3>RELATÓRIO DE INTELIGÊNCIA (PT-BR)</h3>
+                                    <p>Olá, sou o Felipe Henrique Moreira Jales. O meu objetivo profissional é atuar na área de Dados e Inteligência Artificial numa empresa de tecnologia, com a ambição futura de integrar uma BIG TECH. Após a conclusão do curso, planeio também prosseguir os meus estudos académicos através de um mestrado ou doutoramento. Sou um profissional motivado e focado no autoconhecimento, destacando-me pela resiliência, flexibilidade e agilidade. Valorizo o pensamento criativo, a literacia tecnológica e a empatia, mantendo um foco constante no aprendizado contínuo. Atualmente, dedico-me ao aprimoramento das minhas competências em Python, SQL, ferramentas de Big Data e língua inglesa.</p>
+                                </div>
+
+                                <div class="idioma en">
+                                    <div class="stamp">CONFIDENTIAL // AUTHORIZED ACCESS</div>
+                                    <h3>INTELLIGENCE REPORT (EN-US)</h3>
+                                    <p>Hello, my name is Felipe Henrique Moreira Jales. My professional goal is to work in the data and artificial intelligence field at a technology company, with the future ambition of joining a big tech company. After completing my degree, I plan to pursue academic studies through a Master's or Doctoral programme. I am a motivated professional with a focus on self-knowledge and I stand out for my resilience, flexibility and agility. I value creative thinking, technological literacy and empathy, and I am committed to continuous learning. Currently, I am working to improve my Python, SQL, Big Data tools and English skills.</p>
+                                </div>
+
+                                <div class="skill-tags">
+                                    <span class="tag">#PYTHON</span>
+                                    <span class="tag">#SQL_DATABASE</span>
+                                    <span class="tag">#ARTIFICIAL_INTELLIGENCE</span>
+                                    <span class="tag">#BIG_DATA</span>
+                                    <span class="tag">#RESILIÊNCIA_TÁTICA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projetos" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-02 : OPERAÇÕES TÁTICAS [CMD: projetos | projects]</span>
+                        <h2>ARQUIVOS DE PROJETOS</h2>
+                    </div>
+
+                    <div class="project-filter-bar">
+                        <span class="filter-label">FILTRAR DIRETÓRIO:</span>
+                        <div class="filter-buttons">
+                            <button type="button" class="filter-btn active" data-filter="todos">[ TODOS OS ARQUIVOS ]</button>
+                            <button type="button" class="filter-btn" data-filter="faculdade">[ DIVISÃO ACADÉMICA / FACULDADE ]</button>
+                            <button type="button" class="filter-btn" data-filter="externo">[ OPERAÇÕES INDEPENDENTES / EXTERNOS ]</button>
+                        </div>
+                    </div>
+
+                    <div class="projects-wrapper">
+                        <div class="project-category" data-category="faculdade">
+                            <div class="category-divider">
+                                <span class="divider-tag">DIR // 01</span>
+                                <h3>OPERAÇÕES ACADÉMICAS (FACULDADE)</h3>
+                                <div class="divider-line"></div>
+                            </div>
+
+                            <div class="projetos-grid">
+                                <div class="projeto-card">
+                                    <div class="card-status-bar">
+                                        <span class="status-badge">CÓDIGO: ACAD-001</span>
+                                        <span class="status-alert">STATUS: EM DESENVOLVIMENTO</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="tactical-title">[ PESQUISA ACADÉMICA E ESTRUTURA DE DADOS ]</p>
+                                        <p>
+                                            Diretório reservado para trabalhos práticos universitários, algoritmos computacionais, projetos de engenharia de software e pesquisas voltadas para Ciência de Dados e Inteligência Artificial desenvolvidas no ambiente académico.
+                                        </p>
+                                        <div class="progress-container">
+                                            <div class="progress-label">
+                                                <span>COMPILAÇÃO DE MÓDULOS UNIVERSITÁRIOS</span>
+                                                <span>EM PROGRESSO...</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-category" data-category="externo">
+                            <div class="category-divider">
+                                <span class="divider-tag">DIR // 02</span>
+                                <h3>OPERAÇÕES INDEPENDENTES (FORA DA FACULDADE)</h3>
+                                <div class="divider-line"></div>
+                            </div>
+
+                            <div class="projetos-grid">
+                                <div class="projeto-card">
+                                    <div class="card-status-bar">
+                                        <span class="status-badge">CÓDIGO: EXT-001</span>
+                                        <span class="status-alert">STATUS: CLASSIFICADO / EM DESENVOLVIMENTO</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="tactical-title">[ LABORATÓRIO PESSOAL: PYTHON, SQL & BIG DATA ]</p>
+                                        <p>
+                                            Atualmente, estou focado na minha aprendizagem e desenvolvimento técnico em Python, SQL e Inteligência Artificial. 
+                                            Ainda não possuo projetos finalizados para exibição, mas em breve atualizarei esta secção com os meus primeiros modelos, automações e análises de dados independentes.
+                                        </p>
+                                        <div class="progress-container">
+                                            <div class="progress-label">
+                                                <span>TREINAMENTO DE MODELOS PREDITIVOS E SCRIPTS</span>
+                                                <span>EM PROGRESSO...</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experiencias" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-03 : REGISTRO DE CAMPO [CMD: experiencias | experience | xp]</span>
+                        <h2>HISTÓRICO OPERACIONAL</h2>
+                    </div>
+
+                    <div class="experiencia-lista">
+                        <div class="exp-item">
+                            <div class="card-status-bar">
+                                <span class="status-badge">DISPONIBILIDADE: IMEDIATA</span>
+                                <span class="status-ready">PRONTO PARA DESDOBRAMENTO</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="tactical-title">[ EM BUSCA DA PRIMEIRA OPORTUNIDADE ]</p>
+                                <p>
+                                    No momento, encontro-me totalmente dedicado à minha formação académica e ao aprimoramento das minhas competências em tecnologia e dados. 
+                                    Estou à procura da minha primeira oportunidade de estágio ou de uma vaga júnior na área de Inteligência Artificial e Big Data para aplicar os meus conhecimentos num ambiente real.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certificacoes" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-04 : HABILITAÇÕES OFICIAIS [CMD: certificacoes | certifications | certs]</span>
+                        <h2>CERTIFICAÇÕES & CREDENCIAIS</h2>
+                    </div>
+
+                    <div class="certs-grid">
+                        <div class="projeto-card">
+                            <div class="card-status-bar">
+                                <span class="status-badge">CREDENCIAL: CERT-01</span>
+                                <span class="status-ready">EM FORMAÇÃO CONTÍNUA</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="tactical-title">[ CIÊNCIA DA COMPUTAÇÃO & ENGENHARIA DE SOFTWARE ]</p>
+                                <p>Formação superior focada em estrutura de dados, algoritmos complexos, arquitetura de sistemas, inteligência artificial e engenharia de dados.</p>
+                                <div class="skill-tags">
+                                    <span class="tag">#GRADUAÇÃO</span>
+                                    <span class="tag">#ALGORITMOS</span>
+                                    <span class="tag">#ENGENHARIA_DE_SOFTWARE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projeto-card">
+                            <div class="card-status-bar">
+                                <span class="status-badge">CREDENCIAL: CERT-02</span>
+                                <span class="status-alert">EM APRIMORAMENTO</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="tactical-title">[ CAPACITAÇÃO TÉCNICA: PYTHON, SQL, BIG DATA & INGLÊS ]</p>
+                                <p>Trilha de especialização técnica voltada para manipulação de bancos de dados relacionais, programação em Python para análise de dados, ferramentas de Big Data e proficiência no idioma inglês.</p>
+                                <div class="skill-tags">
+                                    <span class="tag">#PYTHON</span>
+                                    <span class="tag">#SQL</span>
+                                    <span class="tag">#BIG_DATA</span>
+                                    <span class="tag">#ENGLISH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="curriculo" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-05 : DOCUMENTAÇÃO FÍSICA [CMD: curriculo | cv | resume]</span>
+                        <h2>CURRÍCULO & FICHA TÉCNICA (CV)</h2>
+                    </div>
+
+                    <div class="cv-box">
+                        <div class="card-status-bar">
+                            <span class="status-badge">ARQUIVO: CV_FELIPE_JALES.PDF</span>
+                            <span class="status-ready">VERIFICADO // PRONTO PARA EXPORTAÇÃO</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="cv-header-summary">
+                                <div>
+                                    <p class="tactical-title">FELIPE HENRIQUE MOREIRA JALES</p>
+                                    <p class="cv-sub">Estudante de Tecnologia // Foco em Dados, Big Data & Inteligência Artificial</p>
+                                </div>
+                                <div class="cv-actions">
+                                    <a href="curriculo.pdf" download="Curriculo_Felipe_Jales.pdf" class="btn">[ BAIXAR CURRÍCULO (PDF) ]</a>
+                                </div>
+                            </div>
+
+                            <div class="cv-summary-grid">
+                                <div class="cv-block">
+                                    <h4>// OBJETIVO TÁTICO</h4>
+                                    <p>Atuar em estágio ou vaga júnior na área de Dados, Big Data e Inteligência Artificial em empresas de tecnologia, com plano de carreira focado em Big Techs e pós-graduação stricto sensu (Mestrado/Doutorado).</p>
+                                </div>
+                                <div class="cv-block">
+                                    <h4>// COMPETÊNCIAS TÉCNICAS</h4>
+                                    <p>Python, SQL, Ferramentas de Big Data, Lógica de Programação, Estrutura de Dados, Git/GitHub e Inglês Técnico.</p>
+                                </div>
+                                <div class="cv-block">
+                                    <h4>// PERFIL COMPORTAMENTAL</h4>
+                                    <p>Resiliência, flexibilidade, agilidade de aprendizado, pensamento criativo, literacia tecnológica e trabalho em equipe.</p>
+                                </div>
+                                <div class="cv-block">
+                                    <h4>// CANAIS DIRETOS</h4>
+                                    <p>E-mail: felipehjales@gmail.com<br>Tel/WhatsApp: (31) 98352-9504</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contato" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-06 : TRANSMISSÃO CRIPTOGRAFADA [CMD: contato | contact]</span>
+                        <h2>CANAL DE COMUNICAÇÃO SEGURO</h2>
+                    </div>
+
+                    <div class="contato-wrapper">
+                        <div class="icones-sociais">
+                            <div class="comm-box-header">FREQUÊNCIAS DIRETAS</div>
+                            <a href="https://wa.me/5531983529504" target="_blank">
+                                <span class="comm-code">[COM-01]</span> WHATSAPP: (31) 98352-9504
+                            </a>
+                            <a href="mailto:felipehjales@gmail.com">
+                                <span class="comm-code">[COM-02]</span> E-MAIL: felipehjales@gmail.com
+                            </a>
+                            <a href="https://www.linkedin.com/in/felipe-jales-a91665418/" target="_blank">
+                                <span class="comm-code">[COM-03]</span> REDE: LINKEDIN OFICIAL
+                            </a>
+                            <a href="https://github.com/FelipehmJales" target="_blank">
+                                <span class="comm-code">[COM-04]</span> REPOSITÓRIO: GITHUB
+                            </a>
+                        </div>
+
+                        <form action="#" method="POST" class="form-contato">
+                            <div class="comm-box-header">TERMINAL DE TRANSMISSÃO DE MENSAGEM</div>
+                            <div class="input-group">
+                                <label>IDENTIFICAÇÃO DO REMETENTE:</label>
+                                <input type="text" name="nome" placeholder="Digite o seu Nome..." required>
+                            </div>
+                            <div class="input-group">
+                                <label>ENDEREÇO DE RETORNO (E-MAIL):</label>
+                                <input type="email" name="email" placeholder="Digite o seu E-mail..." required>
+                            </div>
+                            <div class="input-group">
+                                <label>PACOTE DE DADOS (MENSAGEM):</label>
+                                <textarea name="mensagem" rows="4" placeholder="Insira os detalhes da transmissão..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn">[ INICIAR TRANSMISSÃO ]</button>
+                        </form>
+                    </div>
+                </section>
+
+                <section id="ajuda" class="os-panel">
+                    <div class="section-header">
+                        <span class="section-code">// SEC-07 : MANUAL DE OPERAÇÃO [CMD: ajuda | help]</span>
+                        <h2>LISTA DE COMANDOS DO TERMINAL</h2>
+                    </div>
+
+                    <div class="help-terminal-box">
+                        <div class="terminal-bar">
+                            <div class="terminal-title">BASH // SISTEMA DE COMANDOS INTERATIVOS</div>
+                        </div>
+                        <div class="help-content">
+                            <p class="help-intro">Clique em qualquer comando abaixo ou digite-o na barra de comando inferior para navegar instantaneamente entre os módulos:</p>
+                            
+                            <div class="cmd-list">
+                                <div class="cmd-item" data-cmd="sobre">
+                                    <span class="cmd-trigger">&gt; sobre | about</span>
+                                    <span class="cmd-desc">- Mostra uma breve descrição e o dossiê completo do analista</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="ajuda">
+                                    <span class="cmd-trigger">&gt; ajuda | help</span>
+                                    <span class="cmd-desc">- Mostra esta lista de comandos disponíveis no sistema</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="projetos">
+                                    <span class="cmd-trigger">&gt; projetos | projects</span>
+                                    <span class="cmd-desc">- Exibe os principais projetos académicos e independentes</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="experiencias">
+                                    <span class="cmd-trigger">&gt; experiencias | experience | xp</span>
+                                    <span class="cmd-desc">- Mostra o histórico operacional e disponibilidade profissional</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="certificacoes">
+                                    <span class="cmd-trigger">&gt; certificacoes | certifications | certs</span>
+                                    <span class="cmd-desc">- Lista as certificações, formação e credenciais técnicas</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="curriculo">
+                                    <span class="cmd-trigger">&gt; curriculo | cv | resume</span>
+                                    <span class="cmd-desc">- Visualiza o resumo técnico e baixa o currículo em PDF</span>
+                                </div>
+                                <div class="cmd-item" data-cmd="contato">
+                                    <span class="cmd-trigger">&gt; contato | contact</span>
+                                    <span class="cmd-desc">- Exibe minhas informações de contato e canal de mensagem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="os-cli-bar">
+            <form id="cli-form" class="cli-form" autocomplete="off">
+                <span class="cli-prompt">operador@fhmj-intel:~$</span>
+                <input type="text" id="cli-input" class="cli-input" placeholder="Digite um comando (ex: sobre, projetos, xp, certs, cv, contato, help)...">
+                <span id="cli-feedback" class="cli-feedback">PRONTO</span>
+                <button type="submit" class="cli-btn">EXECUTAR</button>
+            </form>
+        </footer>
+    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("8mhlFMfSFs8TAWc7q");
-        })();
-
-        window.onload = function() {
-            document.querySelector('.form-contato').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const btn = this.querySelector('button');
-                const btnTextoOriginal = btn.innerText;
-                btn.innerText = 'Enviando...';
-
-                const nome = this.nome.value;
-                const email = this.email.value;
-                const mensagem = this.mensagem.value;
-
-                if(nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
-                    alert('Por favor, preencha todos os campos!');
-                    btn.innerText = btnTextoOriginal;
-                    return;
-                }
-
-                emailjs.sendForm('service_4bsgnqi', 'template_ftbjmru', this)
-                    .then(function() {
-                        alert('Mensagem enviada com sucesso! Entrarei em contacto em breve.');
-                        document.querySelector('.form-contato').reset();
-                        btn.innerText = btnTextoOriginal;
-                    }, function(error) {
-                        alert('Falha ao enviar a mensagem. Erro: ' + JSON.stringify(error));
-                        btn.innerText = btnTextoOriginal;
-                    });
-            });
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
